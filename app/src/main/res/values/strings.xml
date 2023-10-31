@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Ktor</string>
+    <string name="enter_value_to_save">Enter Value to Save</string>
+    <string name="save">Save</string>
+    <string name="show_saved">Show Saved</string>
+    <string name="test_value">Test Value</string>
+    <string name="next_screen">Next Screen</string>
+    <string name="no_user_found">No User Found</string>
 </resources>
