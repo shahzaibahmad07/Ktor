@@ -19,8 +19,8 @@ class UsersRvAdapter(private val list: List<Data>) : RecyclerView.Adapter<UsersR
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.tvUserName.text = list[position].login
-        Picasso.get().load(list[position].avatar_url).into(holder.ivUserAvatar)
+        holder.tvUserName.text = list[position].first_name
+        Picasso.get().load(list[position].avatar).into(holder.ivUserAvatar)
     }
 
     override fun getItemCount(): Int {

@@ -32,7 +32,10 @@ class MainActivity2 : AppCompatActivity() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 val result = userApiUtil.getAllUsers()
-                showAllUsers(result)
+                showAllUsers(result.data)
+
+                val result2 = userApiUtil.getSingleUser(2)
+                Log.d("Ktor Log Data", "$result2")
             }
         }
     }
